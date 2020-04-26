@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+
+<!-- New Project Wizards -->
+   <extension
+         point="org.eclipse.ui.newWizards"> 
+      <category
+            name="%category.myeclipse.xml.name"
+            parentCategory="com.genuitec.eclipse.myeclipse"
+            id="com.genuitec.eclipse.myeclipse.xml">
+      </category>                       
+      <category
+            name="%category.myeclipse.j2ee.name"
+            parentCategory="com.genuitec.eclipse.myeclipse"
+            id="com.genuitec.eclipse.myeclipse.j2ee">
+      </category>
+      <category
+            name="%category.myeclipse.ejb.name"
+            parentCategory="com.genuitec.eclipse.myeclipse"
+            id="com.genuitec.eclipse.myeclipse.ejb">
+      </category>
+      <wizard
+            name="%wizard.NewEARProjectWizard.name"
+            icon="icons/new_ear_project.gif"
+            category="org.eclipse.jst.j2ee.internal"
+            class="com.genuitec.eclipse.j2eedt.ui.wizard.EARProjectWizard"
+            project="true"
+            finalPerspective="com.genuitec.myeclipse.perspective.myeclipseperspective"
+            id="com.genuitec.eclipse.j2eedt.ui.wizard.EARProjectWizard">
+         <description>
+            %wizard.NewEARProjectWizard.description
+         </description>
+      </wizard>
+      <wizard
+            name="%wizard.EJBProjectCreationWizard.name"
+            icon="icons/new_ejb_project.gif"
+            category="org.eclipse.jst.j2ee.internal"
+            class="com.genuitec.eclipse.j2eedt.ui.wizard.EJBProjectWizard"
+            project="true"
+            finalPerspective="com.genuitec.myeclipse.perspective.myeclipseperspective"
+            id="com.genuitec.eclipse.j2eedt.ui.wizard.EJBProjectWizard">
+         <description>
+            %wizard.EJBProjectCreationWizard.description
+         </description>
+      </wizard>
+      <wizard
+            name="%wizard.WebProjectCreationWizard.name"
+            icon="icons/new_web_project.gif"
+            category="org.eclipse.jst.j2ee.internal"
+            class="com.genuitec.eclipse.j2eedt.ui.wizard.WebProjectWizard"
+            project="true"
+            finalPerspective="com.genuitec.myeclipse.perspective.myeclipseperspective"
+            id="com.genuitec.eclipse.j2eedt.ui.wizard.WebProjectWizard">
+         <description>
+            %wizard.WebProjectCreationWizard.description
+         </description>
+      </wizard>
+      <wizard
+            name="%wizard.ApplicationClientProjectWizard.name"
+            class="com.genuitec.eclipse.j2eedt.ui.wizard.AppClientProjectWizard"
+            icon="icons/new_appclient_project.gif"
+            category="org.eclipse.jst.j2ee.internal"
+            id="com.genuitec.eclipse.j2eedt.ui.wizard.AppClientProjectWizard"
+            finalPerspective="com.genuitec.myeclipse.perspective.myeclipseperspective"
+            project="true">
+         <description>
+            %wizard.ApplicationClientProjectWizard.description
+         </description>
+      </wizard>
+      <wizard
+            name="%wizard.WebFragmentProjectWizard.name"
+            class="com.genuitec.eclipse.j2eedt.ui.wizard.WebFragmentProjectWizard"
+            icon="icons/new_web_fragment_project.gif"
+            category="org.eclipse.jst.j2ee.internal"
+            id="com.genuitec.eclipse.j2eedt.ui.wizard.WebFragmentProjectWizard"
+            finalPerspective="com.genuitec.myeclipse.perspective.myeclipseperspective"
+            project="true">
+         <description>
+            %wizard.WebFragmentProjectWizard.description
+         </description>
+      </wizard>      
+      <wizard
+            name="%wizard.ConnectorProjectWizard.name"
+            class="com.genuitec.eclipse.j2eedt.ui.wizard.ConnectorProjectWizard"
+            icon="icons/new_connector_project.gif"
+            category="org.eclipse.jst.j2ee.internal"
+            id="com.genuitec.eclipse.j2eedt.ui.wizard.ConnectorProjectWizard"
+            finalPerspective="com.genuitec.myeclipse.perspective.myeclipseperspective"
+            project="true">
+         <description>
+            %wizard.ConnectorProjectWizard.description
+         </description>
+      </wizard>
+      
+      <wizard
+            finalPerspective="com.genuitec.myeclipse.perspective.myeclipseperspective"
+            class="com.genuitec.eclipse.j2eedt.ui.wizard.NewEntityEJB3Wizard"
+            icon="icons/entitybean_wiz.png"
+            category="org.eclipse.jst.ejb.ui"
+            name="%wizard.NewEntityEJBWizard.name"
+            id="org.jboss.ide.eclipse.jdt.j2ee.ui.wizards.ejb.NewEntityEJBWizard">
+         <description>
+            %wizard.NewEntityEJBWizard.description
+         </description>
+      </wizard>
+      <wizard
+            finalPerspective="com.genuitec.myeclipse.perspective.myeclipseperspective"
+            class="com.genuitec.eclipse.j2eedt.ui.wizard.NewMessageDrivenEJB3Wizard"
+            icon="icons/msgdrivenbean_wiz.gif"
+            category="org.eclipse.jst.ejb.ui"
+            name="%wizard.NewMessageDrivenEJBWiizard.name"
+            id="org.jboss.ide.eclipse.jdt.j2ee.ui.wizards.ejb.NewMessageDrivenEJBWizard">
+         <description>
+            %wizard.NewMessageDrivenEJBWizard.description
+         </description>
+      </wizard>   
+       <wizard
+            finalPerspective="com.genuitec.myeclipse.perspective.myeclipseperspective"
+            class="com.genuitec.eclipse.j2eedt.ui.wizard.NewSessionBeanEJB3Wizard"
+            icon="icons/sessionbean_wiz.gif"
+            category="org.eclipse.jst.ejb.ui"
+            name="%wizard.NewSessionEJBWizard.name"
+            id="org.jboss.ide.eclipse.jdt.j2ee.ui.wizards.ejb.NewSessionEJBWizard">
+         <description>
+            %wizard.NewSessionEJBWizard.description
+         </description>
+      </wizard>         
+      <primaryWizard id="com.genuitec.eclipse.j2eedt.ui.wizard.EARProjectWizard"/>
+      <primaryWizard id="com.genuitec.eclipse.j2eedt.ui.wizard.EJBProjectWizard"/>
+      <primaryWizard id="com.genuitec.eclipse.j2eedt.ui.wizard.WebProjectWizard"/>
+      <primaryWizard id="com.genuitec.eclipse.j2eedt.ui.wizard.ConnectorProjectWizard"/>
+      <primaryWizard id="com.genuitec.eclipse.j2eedt.ui.wizard.AppClientProjectWizard"/>
+      <primaryWizard id="com.genuitec.eclipse.j2eedt.ui.wizard.WebFragmentProjectWizard"/>
+   </extension>
+   
+<!-- Preference Pages -->
+   <extension
+         id="com.genuitec.eclipse.j2eedt.ui.preferencepageextension"
+         name="%preferencePage.j2ee.name"
+         point="org.eclipse.ui.preferencePages">
+	  <page
+	        category="com.genuitec.eclipse.preferencepage.frameworks"
+            name="%page.webproject.preferencepage.name"
+            class="com.genuitec.eclipse.j2eedt.ui.preference.WebProjectPreferencePage"
+            id="com.genuitec.eclipse.j2ee.webproject.preferencepage">
+      </page>
+	  <page
+	        category="com.genuitec.eclipse.preferencepage.frameworks"	  
+            name="%page.ejbproject.preferencepage.name"
+            class="com.genuitec.eclipse.j2eedt.ui.preference.EJBProjectPreferencePage"
+            id="com.genuitec.eclipse.j2ee.ejbproject.preferencepage">
+      </page>
+   </extension>
+   
+   
+<!-- ActionSets -->
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            id="com.genuitec.eclipse.j2eedt.core.ejb"
+            label="MyEclipse-EJB"
+            visible="false">
+         <action
+               class="com.genuitec.eclipse.j2eedt.ui.action.EJB3BeanAction"
+               icon="icons/entitybean_wiz.png"
+               id="com.genuitec.eclipse.j2eedt.core.ejb3beanaction"
+               label="%action.ejb3beanaction.label"
+               style="pulldown"
+               toolbarPath="Normal/debug"
+               tooltip="%action.ejb3beanaction.tooltip">
+         </action>
+      </actionSet>
+   </extension>
+<!-- Popup Menus -->
+<!-- Define popup menu structure for all IAdaptables -->
+
+   <!-- Add/Remove Modules context-menu -->   
+   <extension
+         id="com.genuitec.eclipse.ast.deploy.popup"
+         name="PopupMenu"
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            objectClass="org.eclipse.core.runtime.IAdaptable"
+            id="com.genuitec.eclipse.ast.deploy.popup.contribution">
+         <visibility>
+            <or>
+               <objectState name="nature" value="org.eclipse.wst.common.project.facet.core.nature"/>
+            </or>
+         </visibility>
+         <action
+               label="%action.popupmoduleaction.label"
+               class="com.genuitec.eclipse.j2eedt.ui.action.ModuleProjectMgmtActionDelegate"
+               menubarPath="javeeUIPopupMenuCategory/deployment"
+               enablesFor="1"
+               id="com.genuitec.j2eedt.core.ui.action.popupmoduleaction">
+         </action>
+      </objectContribution>
+   </extension>
+   
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            objectClass="org.eclipse.core.resources.IResource"
+            id="ClearValidationMenuAction"
+            adaptable="true">
+         <action
+               class="com.genuitec.eclipse.j2eedt.ui.action.ClearValidationMarkersAction"
+               enablesFor="+"
+               id="ClearValidationAction"
+               label="%action.ClearValidationAction.label"
+               menubarPath="com.genuitec.eclipse.contextmenu.validation/validation">
+         </action>
+      </objectContribution>
+    </extension>
+  
+    <extension point="org.eclipse.ui.editorActions">
+        <editorContribution
+            id="org.eclipse.core.runtime.xml.source.editorActions"
+            targetID="xml_source_editor">
+            <action
+                id="CleanupDocument"
+                label="%CleanupDocument_label"
+                definitionId="org.eclipse.wst.sse.ui.cleanup.document"
+                tooltip="%CleanupDocument_tooltip"
+                class="org.eclipse.wst.xml.ui.internal.actions.CleanupActionXMLDelegate"
+                actionID="CleanupDocument">
+            </action>
+            <action
+                id="ToggleComment"
+                label="%ToggleComment_label"
+                definitionId="org.eclipse.wst.sse.ui.toggle.comment"
+                tooltip="%ToggleComment_tooltip"
+                class="org.eclipse.wst.xml.ui.internal.actions.ToggleCommentActionXMLDelegate"
+                actionID="ToggleComment">
+            </action>
+            <action
+                id="AddBlockComment"
+                label="%AddBlockComment_label"
+                definitionId="org.eclipse.wst.sse.ui.add.block.comment"
+                tooltip="%AddBlockComment_tooltip"
+                class="org.eclipse.wst.xml.ui.internal.actions.AddBlockCommentActionXMLDelegate"
+                actionID="AddBlockComment">
+            </action>
+            <action
+                id="RemoveBlockComment"
+                label="%RemoveBlockComment_label"
+                definitionId="org.eclipse.wst.sse.ui.remove.block.comment"
+                tooltip="%RemoveBlockComment_tooltip"
+                class="org.eclipse.wst.xml.ui.internal.actions.RemoveBlockCommentActionXMLDelegate"
+                actionID="RemoveBlockComment">
+            </action>
+            <action
+                id="FindOccurrences"
+                label="%FindOccurrences_label"
+                definitionId="org.eclipse.wst.sse.ui.search.find.occurrences"
+                class="org.eclipse.wst.xml.ui.internal.search.XMLFindOccurrencesActionDelegate"
+                actionID="FindOccurrences">
+            </action>
+            <action
+                id="StructureSelectEnclosing"
+                label="%StructureSelectEnclosing_label"
+                definitionId="org.eclipse.wst.sse.ui.structure.select.enclosing"
+                tooltip="%StructureSelectEnclosing_tooltip"
+                class="org.eclipse.wst.xml.ui.internal.selection.StructuredSelectEnclosingXMLActionDelegate"
+                actionID="StructureSelectEnclosing">
+            </action>
+            <action
+                id="StructureSelectNext"
+                label="%StructureSelectNext_label"
+                definitionId="org.eclipse.wst.sse.ui.structure.select.next"
+                tooltip="%StructureSelectNext_tooltip"
+                class="org.eclipse.wst.xml.ui.internal.selection.StructuredSelectNextXMLActionDelegate"
+                actionID="StructureSelectNext">
+            </action>
+            <action
+                id="StructureSelectPrevious"
+                label="%StructureSelectPrevious_label"
+                definitionId="org.eclipse.wst.sse.ui.structure.select.previous"
+                tooltip="%StructureSelectPrevious_tooltip"
+                class="org.eclipse.wst.xml.ui.internal.selection.StructuredSelectPreviousXMLActionDelegate"
+                actionID="StructureSelectPrevious">
+            </action>
+            <action
+                id="StructureSelectHistory"
+                label="%StructureSelectHistory_label"
+                definitionId="org.eclipse.wst.sse.ui.structure.select.last"
+                tooltip="%StructureSelectHistory_tooltip"
+                class="org.eclipse.wst.sse.ui.internal.selection.StructuredSelectHistoryActionDelegate"
+                actionID="StructureSelectHistory">
+            </action>
+        </editorContribution>
+   </extension>
+    <extension
+          point="org.eclipse.ui.importWizards">
+       <category
+             id="com.genuitec.myeclipse"
+             name="MyEclipse JEE">
+       </category>
+    </extension>
+    <extension
+          point="org.eclipse.ui.exportWizards">
+       <category
+             id="com.genuitec.myeclipse"
+             name="MyEclipse JEE">
+       </category>
+    </extension>
+    
+    <!-- project facets contributions -->
+    
+    <extension
+			point="org.eclipse.ui.menus">
+		<menuContribution
+				locationURI="popup:org.eclipse.ui.popup.any?after=additions">
+			<menu label="Configure Facets..." id="com.genuitec.popup.installFacets">
+				<visibleWhen>
+					<and>
+		            	<count value="1"/>
+						<iterate ifEmpty="false">
+							<adapt type="org.eclipse.core.resources.IProject">
+								<test property="org.eclipse.core.resources.open" value="true" />
+							</adapt>
+						</iterate>
+					</and>
+				</visibleWhen>
+			</menu>
+		</menuContribution>
+		<menuContribution
+        	locationURI="menu:project?after=myeclipsemenuSeparator">
+			<menu label="Configure Facets..." id="com.genuitec.menu.installFacets">
+				<visibleWhen>
+					<and>
+		            	<count value="1"/>
+						<iterate ifEmpty="false">
+							<adapt type="org.eclipse.core.resources.IProject">
+								<test property="org.eclipse.core.resources.open" value="true" />
+							</adapt>
+						</iterate>
+					</and>
+				</visibleWhen>
+			</menu>
+    	</menuContribution>
+    	<menuContribution locationURI="popup:com.genuitec.popup.installFacets">
+			<command commandId="org.eclipse.wst.common.project.facet.ui.ConvertProjectToFacetedForm" style="push">
+		        <visibleWhen checkEnabled="false">
+		          <and>
+		            <count value="1"/>
+		            <iterate ifEmpty="false">
+		              <adapt type="org.eclipse.core.resources.IProject">
+		                <not>
+		                  <test property="org.eclipse.core.resources.projectNature" value="org.eclipse.wst.common.project.facet.core.nature"/>
+		                </not>
+		              </adapt>
+		            </iterate>
+		          </and>
+		        </visibleWhen>
+     		</command>
+	        <command commandId="com.genuitec.installFacets.manage" style="push">
+		        <visibleWhen checkEnabled="false">
+		          <and>
+		            <count value="1"/>
+		            <iterate ifEmpty="false">
+		              <adapt type="org.eclipse.core.resources.IProject">
+		                <test property="org.eclipse.core.resources.projectNature" value="org.eclipse.wst.common.project.facet.core.nature"/>
+		              </adapt>
+		            </iterate>
+		          </and>
+		        </visibleWhen>
+	        </command>
+	        <separator name="facetList" visible="false"/>
+	        <dynamic class="com.genuitec.eclipse.j2eedt.facet.ui.command.FacetMenuContribution" id="facetListContribution"/>
+    	</menuContribution>
+    	<menuContribution locationURI="menu:com.genuitec.menu.installFacets">
+			<command commandId="org.eclipse.wst.common.project.facet.ui.ConvertProjectToFacetedForm" style="push">
+		        <visibleWhen checkEnabled="false">
+		          <and>
+		            <count value="1"/>
+		            <iterate ifEmpty="false">
+		              <adapt type="org.eclipse.core.resources.IProject">
+		                <not>
+		                  <test property="org.eclipse.core.resources.projectNature" value="org.eclipse.wst.common.project.facet.core.nature"/>
+		                </not>
+		              </adapt>
+		            </iterate>
+		          </and>
+		        </visibleWhen>
+     		</command>
+	        <command commandId="com.genuitec.installFacets.manage" style="push">
+		        <visibleWhen checkEnabled="false">
+		          <and>
+		            <count value="1"/>
+		            <iterate ifEmpty="false">
+		              <adapt type="org.eclipse.core.resources.IProject">
+		                <test property="org.eclipse.core.resources.projectNature" value="org.eclipse.wst.common.project.facet.core.nature"/>
+		              </adapt>
+		            </iterate>
+		          </and>
+		        </visibleWhen>
+	        </command>
+        	<separator name="facetList" visible="false"/>
+	        <dynamic class="com.genuitec.eclipse.j2eedt.facet.ui.command.FacetMenuContribution" id="facetListContribution"/>
+    	</menuContribution>
+	</extension>
+	
+	
+    <extension
+          point="org.eclipse.wst.common.project.facet.ui.images">
+       <image
+             facet="jst.web.jstl"
+             path="icons/taglib.gif">
+       </image>
+    </extension>
+    <extension
+          point="org.eclipse.ui.commands">
+       <command
+             defaultHandler="com.genuitec.eclipse.j2eedt.facet.ui.command.ManageFacetsCommand"
+             id="com.genuitec.installFacets.manage"
+             name="Manage...">
+       </command>
+       <command
+             defaultHandler="com.genuitec.eclipse.j2eedt.facet.ui.command.InstallFacetCommand"
+             id="com.genuitec.installFacets.install"
+             name="Install facet">
+         <commandParameter
+                id="facet"
+                name="Facet id"
+                optional="false"/>
+       </command>
+    </extension>
+    <extension
+          point="com.genuitec.eclipse.j2eedt.core.genericFacetInstall">
+       <facet
+             id="jst.web"
+             installable="true"
+             wizard-page-image="icons/wizban/new_web_project.gif">
+          <dep-facet id="java"/>
+       </facet>
+       <facet
+             id="jst.ejb"
+             installable="true"
+             wizard-page-image="icons/wizban/new_ejb_project.gif">
+          <dep-facet id="java"/>
+       </facet>
+       <facet
+             id="jst.appclient"
+             installable="true"
+             wizard-page-image="icons/wizban/new_appclient_project.gif">
+          <dep-facet id="java"/>
+       </facet>
+       <facet
+             id="jst.connector"
+             installable="true"
+             wizard-page-image="icons/wizban/new_connector_project.gif">
+          <dep-facet id="java"/>
+       </facet>
+       <facet
+             id="jst.ear"
+             installable="true"
+             wizard-page-image="icons/wizban/new_ear_project.gif">
+       </facet>
+       <facet
+             id="jst.webfragment"
+             installable="true"
+             wizard-page-image="icons/wizban/new_web_project.gif">
+          <dep-facet id="java"/>
+       </facet>
+       <facet
+             id="jst.utility"
+             installable="false">
+          <dep-facet id="java"/>
+       </facet>
+       <facet
+             id="java"
+             installable="false"
+             version-selection-label="Java specification version">
+       </facet>
+       <facet
+             id="jst.web.jstl"
+             installable="true"
+             wizard-page-image="icons/wizban/new_web_project.gif">
+       		<dep-facet id="jst.web"/>
+       </facet>
+    </extension>
+    <extension
+          point="com.genuitec.eclipse.migration.project">
+       <migration-operation
+             class="com.genuitec.eclipse.migration.myeclipse.FixOldJavaScriptProject"
+             name="Configure JavaScript Support"
+             type="me.configure.js"
+             version="1.0"
+             priority="201">
+   		 <enablement>
+         	<and>
+         		<nature name="org.eclipse.wst.jsdt.core.jsNature"/>
+         		<facet type="wst.jsdt.web"/>
+         		<enablement-delegate class="com.genuitec.eclipse.migration.myeclipse.FixOldJavaScriptProject$EnablementDelegate"/>
+       		</and>
+   		 </enablement>
+       </migration-operation>
+    </extension>
+    <extension
+          point="org.eclipse.ui.navigator.navigatorContent">
+       <commonWizard
+             menuGroupId="additions_myeclipseprojects"
+             type="new"
+             wizardId="com.genuitec.eclipse.j2eedt.ui.wizard.WebProjectWizard">
+          <enablement>
+             <test
+                   args="com.genuitec.eclipse.j2eedt.ui.wizard.WebProjectWizard,wizard"
+                   property="com.genuitec.core.common.ContributionEnablementTester.validateResource">
+             </test>
+             <or>
+                <instanceof
+                      value="org.eclipse.core.resources.IResource">
+                </instanceof>                
+                <and>
+                 <instanceof value="java.util.Collection"/>
+				 <count value="0" />
+                </and>
+             </or></enablement>
+       </commonWizard>
+       <commonWizard
+             menuGroupId="additions_myeclipseprojects"
+             type="new"
+             wizardId="com.genuitec.eclipse.j2eedt.ui.wizard.EARProjectWizard">
+          <enablement>
+             <test
+                   args="com.genuitec.eclipse.j2eedt.ui.wizard.EARProjectWizard,wizard"
+                   property="com.genuitec.core.common.ContributionEnablementTester.validateResource">
+             </test>
+             <or>
+                <instanceof
+                      value="org.eclipse.core.resources.IResource">
+                </instanceof>
+                <and>
+                  <instanceof value="java.util.Collection"/>
+				  <count value="0" />
+                </and>
+             </or>
+          </enablement>
+       </commonWizard>
+       <commonWizard
+             menuGroupId="additions_myeclipseprojects"
+             type="new"
+             wizardId="com.genuitec.eclipse.j2eedt.ui.wizard.EJBProjectWizard">
+          <enablement>
+             <test
+                   args="com.genuitec.eclipse.j2eedt.ui.wizard.EJBProjectWizard,wizard"
+                   property="com.genuitec.core.common.ContributionEnablementTester.validateResource">
+             </test>
+             <or>
+                <instanceof
+                      value="org.eclipse.core.resources.IResource">
+                </instanceof>
+                <and>
+                  <instanceof value="java.util.Collection"/>
+				  <count value="0" />
+                </and>
+             </or>
+          </enablement>
+       </commonWizard>
+       <commonWizard
+             menuGroupId="additions_myeclipseprojects"
+             type="new"
+             wizardId="com.genuitec.eclipse.j2eedt.ui.wizard.AppClientProjectWizard">
+          <enablement>
+             <test
+                   args="com.genuitec.eclipse.j2eedt.ui.wizard.AppClientProjectWizard,wizard"
+                   property="com.genuitec.core.common.ContributionEnablementTester.validateResource">
+             </test>
+             <or>
+                <instanceof
+                      value="org.eclipse.core.resources.IResource">
+                </instanceof>
+                <and>
+                  <instanceof value="java.util.Collection"/>
+				  <count value="0" />
+                </and>
+             </or>
+          </enablement>
+       </commonWizard>
+       <commonWizard
+             menuGroupId="additions_myeclipseprojects"
+             type="new"
+             wizardId="com.genuitec.eclipse.j2eedt.ui.wizard.WebFragmentProjectWizard">
+          <enablement>
+             <test
+                   args="com.genuitec.eclipse.j2eedt.ui.wizard.WebFragmentProjectWizard,wizard"
+                   property="com.genuitec.core.common.ContributionEnablementTester.validateResource">
+             </test>
+             <or>
+                <instanceof
+                      value="org.eclipse.core.resources.IResource">
+                </instanceof>
+                <and>
+                  <instanceof value="java.util.Collection"/>
+				  <count value="0" />
+                </and>
+             </or>
+          </enablement>
+       </commonWizard>
+       <commonWizard
+             menuGroupId="additions_myeclipseprojects"
+             type="new"
+             wizardId="com.genuitec.eclipse.j2eedt.ui.wizard.ConnectorProjectWizard">
+          <enablement>
+             <test
+                   args="com.genuitec.eclipse.j2eedt.ui.wizard.ConnectorProjectWizard,wizard"
+                   property="com.genuitec.core.common.ContributionEnablementTester.validateResource">
+             </test>
+             <or>
+                <instanceof
+                      value="org.eclipse.core.resources.IResource">
+                </instanceof>
+                <and>
+                  <instanceof value="java.util.Collection"/>
+				  <count value="0" />
+                </and>
+             </or>
+          </enablement>
+       </commonWizard>
+    </extension>
+    
+</plugin>

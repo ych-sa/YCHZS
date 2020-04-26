@@ -1,0 +1,49 @@
+# Project: 作业
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = main.o 菜单.o 读取并删掉头文件.o 平均分.o 修改信息.o 读取新头文件.o 指定输出学院.o 姓名排序.o
+LINKOBJ  = main.o 菜单.o 读取并删掉头文件.o 平均分.o 修改信息.o 读取新头文件.o 指定输出学院.o 姓名排序.o
+LIBS     = -L"D:/Dev-Cpp/MinGW64/lib" -L"D:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
+INCS     = -I"D:/Dev-Cpp/MinGW64/include" -I"D:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"D:/Dev-Cpp/MinGW64/include" -I"D:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = 作业.exe
+CXXFLAGS = $(CXXINCS) -g3
+CFLAGS   = $(INCS) -g3
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
+
+菜单.o: 菜单.c
+	$(CC) -c 菜单.c -o 菜单.o $(CFLAGS)
+
+读取并删掉头文件.o: 读取并删掉头文件.c
+	$(CC) -c 读取并删掉头文件.c -o 读取并删掉头文件.o $(CFLAGS)
+
+平均分.o: 平均分.c
+	$(CC) -c 平均分.c -o 平均分.o $(CFLAGS)
+
+修改信息.o: 修改信息.c
+	$(CC) -c 修改信息.c -o 修改信息.o $(CFLAGS)
+
+读取新头文件.o: 读取新头文件.c
+	$(CC) -c 读取新头文件.c -o 读取新头文件.o $(CFLAGS)
+
+指定输出学院.o: 指定输出学院.c
+	$(CC) -c 指定输出学院.c -o 指定输出学院.o $(CFLAGS)
+
+姓名排序.o: 姓名排序.c
+	$(CC) -c 姓名排序.c -o 姓名排序.o $(CFLAGS)

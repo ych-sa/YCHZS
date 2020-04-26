@@ -1,0 +1,226 @@
+Manifest-Version: 1.0
+Export-Package: com.genuitec.eclipse.j2eedt.core,com.genuitec.eclipse.
+ j2eedt.facet.ui,com.genuitec.eclipse.j2eedt.ui,com.genuitec.eclipse.j
+ 2eedt.ui.action,com.genuitec.eclipse.j2eedt.ui.dialog,com.genuitec.ec
+ lipse.j2eedt.ui.internal;x-friends:="com.genuitec.eclipse.portlet,com
+ .genuitec.eclipse.ws.xfire",com.genuitec.eclipse.j2eedt.ui.preference
+ ,com.genuitec.eclipse.j2eedt.ui.taglib,com.genuitec.eclipse.j2eedt.ui
+ .wizard,com.genuitec.eclipse.j2eedt.xml,com.genuitec.eclipse.migratio
+ n.myeclipse
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: j2eedtcore.jar
+Bundle-Name: %pluginName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.ui.views,org.eclipse.jface.text,org.eclips
+ e.ui.workbench.texteditor,org.eclipse.ui.editors,com.genuitec.eclipse
+ .core,com.genuitec.eclipse.core.common,org.eclipse.core.resources,org
+ .eclipse.core.runtime,org.eclipse.debug.core,org.eclipse.debug.ui,org
+ .eclipse.jdt.core,org.eclipse.jdt.debug,org.eclipse.jdt.debug.ui,org.
+ eclipse.jdt.launching,org.eclipse.jdt.ui,org.eclipse.swt,org.eclipse.
+ ui,org.eclipse.ui.workbench,org.eclipse.wst.validation,org.eclipse.jd
+ t,org.eclipse.wst.xml.core,org.eclipse.wst.validation.ui,org.eclipse.
+ jst.jsp.core,org.eclipse.wst.common.uriresolver,org.eclipse.wst.sse.c
+ ore,com.genuitec.eclipse.templates,org.eclipse.wst.sse.ui,org.eclipse
+ .team.core,org.eclipse.wst.xml.ui,org.eclipse.core.expressions;bundle
+ -version="3.4.0",org.jdom;bundle-version="1.0.0",org.apache.commons.i
+ o;bundle-version="1.3.2",org.eclipse.jst.j2ee;bundle-version="1.1.300
+ ";visibility:=reexport,org.eclipse.emf.ecore;bundle-version="2.5.0";v
+ isibility:=reexport,org.eclipse.wst.common.project.facet.core;bundle-
+ version="1.4.0";visibility:=reexport,org.eclipse.jem.util;bundle-vers
+ ion="2.0.200",org.eclipse.jst.j2ee.ejb;bundle-version="1.1.300";visib
+ ility:=reexport,org.eclipse.wst.server.core;bundle-version="1.1.101",
+ org.eclipse.jst.common.project.facet.core;bundle-version="1.4.0";visi
+ bility:=reexport,org.eclipse.jst.j2ee.core;bundle-version="1.1.300";v
+ isibility:=reexport,org.eclipse.wst.common.frameworks;bundle-version=
+ "1.1.300";visibility:=reexport,org.eclipse.jst.common.frameworks,org.
+ eclipse.wst.jsdt.core,org.eclipse.wst.web;visibility:=reexport,org.ec
+ lipse.jst.j2ee.ui,org.eclipse.ltk.ui.refactoring,org.eclipse.ltk.core
+ .refactoring,org.eclipse.wst.jsdt.web.core;bundle-version="1.0.300",o
+ rg.eclipse.wst.common.project.facet.ui;bundle-version="1.4.100",org.e
+ clipse.wst.web.ui;bundle-version="1.1.400";visibility:=reexport,org.e
+ clipse.wst.jsdt.ui;bundle-version="1.1.2",org.eclipse.wst.common.modu
+ lecore.ui;bundle-version="1.0.100";visibility:=reexport,org.eclipse.w
+ st.common.modulecore;bundle-version="1.2.100";visibility:=reexport,co
+ m.genuitec.eclipse.runtime;bundle-version="10.0.0";visibility:=reexpo
+ rt,com.genuitec.eclipse.runtime.ui;bundle-version="10.0.0";visibility
+ :=reexport,org.eclipse.ui.forms,com.genuitec.eclipse.migration;bundle
+ -version="10.0.0";visibility:=reexport,org.eclipse.wst.common.emfwork
+ bench.integration;bundle-version="1.2.100",org.eclipse.jst.j2ee.jca;b
+ undle-version="1.1.400";visibility:=reexport,org.eclipse.wst.common.f
+ rameworks.ui;visibility:=reexport,org.eclipse.jem;bundle-version="2.0
+ .600",org.eclipse.jst.servlet.ui,com.genuitec.eclipse.migration.ui;bu
+ ndle-version="11.0.0",com.genuitec.eclipse.j2eedt.core;bundle-version
+ ="13.0.0";visibility:=reexport,org.eclipse.ui.navigator,org.eclipse.j
+ st.j2ee.web
+Bundle-Vendor: %providerName
+Bundle-Version: 13.0.0.me201705100631
+Bundle-ManifestVersion: 2
+Bundle-Activator: com.genuitec.eclipse.j2eedt.ui.J2EEUICore
+Bundle-SymbolicName: com.genuitec.eclipse.j2eedt.ui;singleton:=true
+
+Name: icons/web_project.gif
+SHA1-Digest: NVBfSypsblkY0Cj/EZJenoDevpE=
+
+Name: icons/new_connector_project.gif
+SHA1-Digest: rH5nAWbCLASFD8/wXDXF2jDA0Zc=
+
+Name: icons/wizban/ear_module_manager.gif
+SHA1-Digest: NoHBTAyBbpQCQyjoDnPUzJXc99g=
+
+Name: icons/ejb_project.gif
+SHA1-Digest: QM5sfNvYdIHdcEgqhTq6xcXCmyc=
+
+Name: icons/web_xml_file.gif
+SHA1-Digest: t3Q3u1L4svfsrFsyRQQdfOxvEXY=
+
+Name: icons/ear_project.gif
+SHA1-Digest: sa7EG2HWQsbztjR8g69vvGyyz+o=
+
+Name: icons/wizban/session_bean_wiz.gif
+SHA1-Digest: ppBuEX7t7yiE5h6jNQzuyQ1SVXs=
+
+Name: icons/wizban/new_ear_module.gif
+SHA1-Digest: NoHBTAyBbpQCQyjoDnPUzJXc99g=
+
+Name: icons/wizban/new_web_fragment_project.gif
+SHA1-Digest: BWT62fx/nO2hYfPhxQIZgHwC48o=
+
+Name: icons/wizban/remove_web_caps.gif
+SHA1-Digest: L2vGCnQ3U/5y2+h3yLV69he015g=
+
+Name: icons/wizban/new_ejb_project.gif
+SHA1-Digest: l03RbwGqwCAw4Vpb85zwqNLomB8=
+
+Name: icons/newprj_wiz.gif
+SHA1-Digest: 9RO7MyK+6pbLWDqS++T7FbKETIU=
+
+Name: icons/wizban/new_web_project.gif
+SHA1-Digest: 2Y4NsLnMTvJ4v+PHIvw5BBV6byI=
+
+Name: icons/jca_project.gif
+SHA1-Digest: BDHqmBxIO5vAviWdTBjC3u1R4WA=
+
+Name: plugin.properties
+SHA1-Digest: a9VvYYvPX04Qj57M6DfBidsHJ1Q=
+
+Name: icons/web.gif
+SHA1-Digest: R49WrYSHTKeItyuvlVv2d9eLds0=
+
+Name: icons/webfragment_project.gif
+SHA1-Digest: 9fBuUlGLHcZ2yoJdBp41aDZodPc=
+
+Name: icons/sessionbean_wiz.gif
+SHA1-Digest: N80xjTFXAnxdb20uayx7nIaBKE0=
+
+Name: icons/new_wiz.gif
+SHA1-Digest: b9QHfbt9Sm1uxZsobECGttak4As=
+
+Name: j2eedtcore.jar
+SHA1-Digest: FSbCuSJnZ98tXG7mzm+4o4YGDLk=
+
+Name: license.html
+SHA1-Digest: 4MdwJc4qs/wi4VSGHrIOANUVTRQ=
+
+Name: icons/wizban/message_bean_wiz.gif
+SHA1-Digest: 47JwodYh34u68eQwLDoOOzP1LpA=
+
+Name: icons/new_ear_project1.gif
+SHA1-Digest: kWduxZ8iFTvmXu8vAKGr/od+c44=
+
+Name: icons/ear.gif
+SHA1-Digest: 4Lrak4uCKJaTfzKI3GgBPEy6psM=
+
+Name: icons/msgdrivenbean_wiz.gif
+SHA1-Digest: ejCowC40iCOQCUJ79xHOfdjMH5U=
+
+Name: icons/wizban/cmp_bean_wiz.gif
+SHA1-Digest: Cr2tMY4cri6FQg9f+93lwOIVIiI=
+
+Name: icons/wizban/new_appclient_project.gif
+SHA1-Digest: ME0uhGcxhBWFikYT3LkRdUiCxQs=
+
+Name: icons/new_ejb_project.gif
+SHA1-Digest: jiOOuNql92FMlvXajKyE6PxDw7w=
+
+Name: icons/wizban/old/java_to_web.gif
+SHA1-Digest: LlDI/MoYCJC0RAvEQAK0KLDzyh0=
+
+Name: icons/new_web_fragment_project.gif
+SHA1-Digest: p/9Dtq3zfDWBBdsw5fUKyGINpEU=
+
+Name: icons/app_client_project.gif
+SHA1-Digest: Qwk1naPAJDzp65nk5RFqxPQPla0=
+
+Name: icons/new_taglib_wiz.gif
+SHA1-Digest: CNyU2V1z5XzMdpoXaB7tOQcnSNc=
+
+Name: icons/entitybean_wiz.png
+SHA1-Digest: ILKXtTesezLMJP1O2Q0r1DRUsLo=
+
+Name: icons/taglib.gif
+SHA1-Digest: /UWlkGz8/1ynIQolSMSkmG7cUzw=
+
+Name: icons/wizban/old/new_ear_project.gif
+SHA1-Digest: 7dcWDB7K/dRc+KfWtGKFrD9iwgA=
+
+Name: about.html
+SHA1-Digest: EatBSPBSzGIdgao6v/EvIS3bKUA=
+
+Name: icons/wizban/old/new_web_project.gif
+SHA1-Digest: SfN7GVu4UsfDX+nsgG5Z91htrfE=
+
+Name: icons/ear_project1.gif
+SHA1-Digest: 0C/x5zYaQL15ciHs39G+FUMAWEA=
+
+Name: icons/wizban/new_ear_project.gif
+SHA1-Digest: 54GXn16a/UB8wPO76iOBM5whc8w=
+
+Name: icons/utility_project.gif
+SHA1-Digest: evk2r4nPVt1DeH05wmncbWzpHms=
+
+Name: icons/wizban/java_to_web.gif
+SHA1-Digest: RfsftYlzeyZrK3rKjXMNMGbeoJQ=
+
+Name: icons/wizban/new_connector_project.gif
+SHA1-Digest: Rw/AJyucTJmnA3rivIUdilQkWrk=
+
+Name: icons/new_appclient_project.gif
+SHA1-Digest: IXY7kSgCzU2pPveOnukR3JEYCLQ=
+
+Name: icons/ejb.gif
+SHA1-Digest: u34qGO3WLMyUqpFLsDNlT1fNLXs=
+
+Name: icons/wizban/old/new_ejb_project.gif
+SHA1-Digest: /3q/9CPG+BFW7UK3BH77SAwerIA=
+
+Name: icons/new_web_project.gif
+SHA1-Digest: 5Hz4t7qwywLb2R30tAH3lVTsB2w=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: o/5NpUxgoK6Qu+s9CDM/yulGLig=
+
+Name: icons/newfile_wiz.gif
+SHA1-Digest: T3OlmPsBuTd5n+ov6z9mBP9DHsE=
+
+Name: icons/new_ear_project.gif
+SHA1-Digest: r40I/MjB+dJBjqSyh+a7Wxol3Lc=
+
+Name: plugin.xml
+SHA1-Digest: RMkFmHC+pb7kvxnsYjm9gK9p2Ok=
+
+Name: icons/newfolder_wiz.gif
+SHA1-Digest: XstFzMGNORV0K+DjtdHKUl5cRsg=
+
+Name: icons/old/new_ejb_project.gif
+SHA1-Digest: vUxRa/S0erAXnCtLg+jWYn+M7mc=
+
+Name: icons/jee_runtime.gif
+SHA1-Digest: 043VzoZK2Nl1LhG9GJBDSL1gboY=
+
+Name: icons/java_to_web.gif
+SHA1-Digest: BKYAA5HHhFDaevHGK2QyuaGiEmo=
+
+Name: icons/appclient.gif
+SHA1-Digest: esjc9RJhR59eK7ExLMaY1tGSgIY=
+
